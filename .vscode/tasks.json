@@ -6,6 +6,8 @@
       "type": "shell",
       "command": "lazbuild",
       "args": [
+        "-B",
+        "--opt=-g -gl -O-",
         "proyecto_final.lpi"
       ],
       "group": {
@@ -21,9 +23,7 @@
       },
       "presentation": {
         "echo": true,
-        "reveal": "always",
-        "focus": false,
-        "panel": "shared"
+        "reveal": "silent"
       },
       "problemMatcher": {
         "owner": "pascal",

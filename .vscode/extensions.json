@@ -1,7 +1,6 @@
 {
   "recommendations": [
     "alefragnani.pascal",
-    "ms-vscode.cpptools",
-    "webfreak.debug"
+    "ms-vscode.cpptools"
   ]
 }
