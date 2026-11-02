@@ -13,14 +13,14 @@ function SeleccionarOpcionMenu(titulo: string; var opciones: T_Menu;
   maxOp: T_Menu_Op): T_Menu_Op;
 function SeleccionarOpcionMenuInteractivo(titulo: string; var opciones: T_Menu;
   maxOp: T_Menu_Op): T_Menu_Op;
-procedure InicializarMenu(var opciones: T_Menu);
+procedure InicializarMenu(out opciones: T_Menu);
 
 implementation
 
 uses
   crt;
 
-procedure InicializarMenu(var opciones: T_Menu);
+procedure InicializarMenu(out opciones: T_Menu);
 var
   i: T_menu_Op;
 begin
@@ -69,13 +69,14 @@ end;
 function SeleccionarOpcionMenuInteractivo(titulo: string; var opciones: T_Menu;
   maxOp: T_Menu_Op): T_Menu_Op;
 var
-  opcion: integer;  //no se usa la dejo porque ya estaba en el ejemplo
   i, seleccion: T_menu_Op;
   tecla: Char;
 begin
 
   ClrScr;
   cursoroff;  //añadido para no ver el cursor
+  GotoXY(60, 10);
+  Write(titulo);
   seleccion := 1;
   for i := 1 to maxOp do
   begin

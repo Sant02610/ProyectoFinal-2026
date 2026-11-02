@@ -13,7 +13,7 @@ Tarchivocliente = file of TCliente;
 procedure AbrirOCrearArchivocliente(var Arch: TArchivocliente; Ruta: string);
 function TamanioArchivocliente(var Arch: TArchivocliente): Integer;
 procedure CerrarArchivocliente(var Arch: TArchivocliente);
-procedure LeerArchivocliente(var Arch: TArchivocliente; Pos: Integer; var Value: Tcliente);
+procedure LeerArchivocliente(var Arch: TArchivocliente; Pos: Integer; out Value: Tcliente);
 procedure EscribirArchivocliente(var Arch: TArchivocliente; Pos: Integer; var Value: Tcliente);
 
 implementation
@@ -41,7 +41,7 @@ begin
   Close(Arch);
 end;
 
-procedure LeerArchivocliente(var Arch: TArchivocliente; Pos: Integer; var Value: TCliente);
+procedure LeerArchivocliente(var Arch: TArchivocliente; Pos: Integer; out Value: TCliente);
 begin
   Seek(Arch, Pos);
   Read(Arch, Value);

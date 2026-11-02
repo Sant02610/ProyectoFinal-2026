@@ -1,11 +1,11 @@
 unit validaciones;
 
-{$codepageUTF8}
+{$codepage UTF8}
 
 interface
 
 uses
-  crt,archivo_cliente,tipos;
+  crt,tipos;
 
 
 function cargardni():TDni;
@@ -16,8 +16,7 @@ implementation
 
 function dnivalido(dni:TDni): boolean;
 begin
-  //logica de valido
-  dnivalido:=true;
+  dnivalido := (Length(dni) >= 7) and (Length(dni) <= 8);
 end;
 
 function cargardni():TDni;
@@ -38,4 +37,3 @@ begin
 end;
 
 end.
-

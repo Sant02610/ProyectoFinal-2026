@@ -11,7 +11,6 @@
       "cwd": "${workspaceFolder}",
       "environment": [],
       "externalConsole": false,
-      "console": "integratedTerminal",
       "MIMode": "gdb",
       "miDebuggerPath": "C:/lazarus/mingw/i386-win32/bin/gdb.exe",
       "preLaunchTask": "build"

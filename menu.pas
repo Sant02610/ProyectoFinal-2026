@@ -1,5 +1,5 @@
 unit menu;
- {$codepageUTF8}
+{$codepage UTF8}
 interface
 
 uses
@@ -39,4 +39,3 @@ implementation
     end;
 
 end.
-
