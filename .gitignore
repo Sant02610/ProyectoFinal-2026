@@ -1,0 +1,39 @@
+# Executables & Binaries
+*.exe
+*.dll
+*.so
+*.dylib
+*.bin
+*.dat
+
+# Free Pascal / Lazarus build output & intermediate files
+*.o
+*.or
+*.ppu
+*.ppu.bak
+*.rst
+*.s
+*.a
+*.compiled
+*.dbg
+lib/
+bin/
+backup/
+
+# Lazarus IDE user session files
+*.lps
+*.bak
+*.lrt
+*.identcache
+
+# VS Code directory (keep config, ignore user state)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# OS generated files
+Thumbs.db
+[Dd]esktop.ini
+.DS_Store

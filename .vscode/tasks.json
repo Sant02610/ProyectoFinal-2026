@@ -1,0 +1,45 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "lazbuild",
+      "args": [
+        "proyecto_final.lpi"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "windows": {
+        "options": {
+          "env": {
+            "PATH": "C:\\lazarus;C:\\lazarus\\fpc\\3.2.2\\bin\\i386-win32;C:\\lazarus\\mingw\\i386-win32\\bin;${env:PATH}"
+          }
+        }
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": {
+        "owner": "pascal",
+        "fileLocation": [
+          "relative",
+          "${workspaceFolder}"
+        ],
+        "pattern": {
+          "regexp": "^(.*)\\((\\d+),(\\d+)\\)\\s+(Fatal|Error|Warning|Note|Hint):\\s+(.*)$",
+          "file": 1,
+          "line": 2,
+          "column": 3,
+          "severity": 4,
+          "message": 5
+        }
+      }
+    }
+  ]
+}

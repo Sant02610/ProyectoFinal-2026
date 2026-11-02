@@ -1,0 +1,35 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Ejecutar con F5",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/proyecto_final.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [
+        {
+          "name": "PATH",
+          "value": "C:\\lazarus\\mingw\\i386-win32\\bin;${env:PATH}"
+        }
+      ],
+      "externalConsole": false,
+      "console": "integratedTerminal",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb.exe",
+      "preLaunchTask": "build"
+    },
+    {
+      "name": "Ejecutar con F5 (Native Debug)",
+      "type": "gdb",
+      "request": "launch",
+      "target": "${workspaceFolder}/proyecto_final.exe",
+      "cwd": "${workspaceFolder}",
+      "valuesFormatting": "parseText",
+      "gdbpath": "gdb.exe",
+      "preLaunchTask": "build"
+    }
+  ]
+}

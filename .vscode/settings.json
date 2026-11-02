@@ -1,0 +1,11 @@
+{
+  "terminal.integrated.env.windows": {
+    "PATH": "C:\\lazarus;C:\\lazarus\\fpc\\3.2.2\\bin\\i386-win32;C:\\lazarus\\mingw\\i386-win32\\bin;${env:PATH}"
+  },
+  "files.associations": {
+    "*.pas": "pascal",
+    "*.lpr": "pascal",
+    "*.lpi": "xml",
+    "*.lps": "xml"
+  }
+}
